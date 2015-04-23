@@ -1,8 +1,9 @@
 @app = angular.module('railsAngular', [
-  'templates'
+  'templates', 'Devise'
 ])
 
 @app.config([
-  '$httpProvider', ($httpProvider)->
+  '$httpProvider', ($httpProvider, AuthProvider)->
     $httpProvider.defaults.headers.common['X-CSRF-Token'] = $('meta[name=csrf-token]')
+
 ])

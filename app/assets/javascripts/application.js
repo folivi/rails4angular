@@ -17,5 +17,7 @@
 //= require angular-route
 //= require angular-rails-templates
 //= require_tree ../angular_templates
+//= require angular-devise/lib/devise
+//= require bootstrap
 //= require_tree .
 
